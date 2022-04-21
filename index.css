@@ -1,0 +1,182 @@
+/* Fonts */
+
+/* Familia font Futura Std */
+
+@font-face {
+    font-family: "Futura Std Medium";
+    src: url("assets/fonts/FuturaStdMedium/Futura StdMedium.otf");
+}
+
+/* Familia font Mont */
+
+/* Incluida en la carpeta de la familia está el especimen muestra para guía futura de uso de fonts.
+
+Están el resto de fonts también en la carpeta en caso de futuro uso.*/
+
+@font-face {
+    font-family: "Mont Thin";
+    src: url("assets/fonts/Mont/Mont-Thin.otf");
+}
+
+@font-face {
+    font-family: "Mont Light";
+    src: url("assets/fonts/Mont/Mont-Light.otf");
+}
+
+@font-face {
+    font-family: "Mont Regular";
+    src: url("assets/fonts/Mont/Mont-Regular.otf");
+}
+
+@font-face {
+    font-family: "Mont SemiBold";
+    src: url("assets/fonts/Mont/Mont-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "Mont Bold";
+    src: url("assets/fonts/Mont/Mont-Bold.otf");
+}
+
+@font-face {
+    font-family: "Mont Heavy";
+    src: url("assets/fonts/Mont/Mont-Heavy.otf");
+}
+
+
+/* Estilizado general */
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Mont Heavy";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* 1 rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Estilizado específico */
+
+/* Estilizado del header-nav */
+
+#container-header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: top .5s ease-in-out .15s;
+    z-index: 3;
+}
+
+#header-img{
+    height: 85%;
+    width: auto;
+    cursor: pointer;
+}
+
+#container-nav{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.nav-anchor{
+    font-size: 1.5rem;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/* Estilizado del main */
+
+#container-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #e8e8e4;
+}
+
+#container-main-text{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-text{
+    padding-top: 2.5rem;
+}
+
+.heading{
+    font-size: 6rem;
+    line-height: 5.5rem;
+    letter-spacing: -.25rem;
+}
+
+.paragraph{
+    width: 70%;
+    font-family: "Futura Std Medium";
+    font-size: 2.75rem;
+}
+
+#img-hero{
+    width: auto;
+    height: 100%;
+}
+
+/* Estilizado de artículos*/
+
+.article{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Estilizado del primer artículo */
+
+#container-article{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FBFBFB;
+}
