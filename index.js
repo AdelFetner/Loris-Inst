@@ -1,41 +1,77 @@
-// Función para que el header se esconda/aparezca
+// window.onload = () =>{
+//     const header = document.getElementById("container-header")
+//     const main = document.getElementById("container-main")
+//     const box = main.getBoundingClientRect();
+//     if(box.top < window.innerHeight && box.bottom >= 0){
+//         header.style.display = "none"
+//     }else{
+//         header.style.display = "flex"
+//     }
+// }
+
+// window.onscroll{
+//     if(box.top < window.innerHeight && box.bottom >= 0){
+//         header.style.display = "flex"
+//     }else{
+//         header.style.display = "none"
+//     }
+// }
+
 
 let scrollPrevio = window.scrollY;
-
 window.onscroll = () => {
-    let header = document.getElementById("container-header");
+    const header = document.getElementById("container-header");
     let scrollActual = window.scrollY;
 
-    if (scrollPrevio > scrollActual) {
+    if (scrollPrevio > scrollActual){
         header.style.top = "0";
     } else {
         header.style.top = "-20%";
-    }
+    };
     scrollPrevio = scrollActual;
 };
 
-// Redirecciones
+const logoHeader = document.getElementById("header-img");
 
-const imageHeader = document.getElementById("header-img");
-
-const imageFooter = document.getElementById("footer-img");
+logoHeader.onclick = () => open("#", "_self")
 
 
-imageHeader.onclick = () => open("#", "_self")
+// función para el typewriter effect
+// referir a https://safi.me.uk/typewriterjs/ para la documentación con los parametros disponibles
 
-imageFooter.onclick = () => open("#", "_self")
+let mainType = document.getElementById('main-type');
 
+let typewriter = new Typewriter(mainType, {
+    loop: true,
+    cursor: "",
+    delay: 75,
+});
 
-// redirecciones de íconos footer-media
-
-const facebookRedirect = document.getElementById("footer-facebook");
-
-const instagramRedirect = document.getElementById("footer-instagram");
-
-const gMapsRedirect = document.getElementById("footer-gmaps");
-
-facebookRedirect.onclick = () => open("https://www.facebook.com/LorisMDulceC")
-
-instagramRedirect.onclick = () => open("https://www.instagram.com/lorismdulcec/")
-
-gMapsRedirect.onclick = () => open("https://g.page/jardinInfantes?share")
+typewriter.typeString('lenguajes')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('manos')
+    .pauseFor(450)
+    .deleteAll()
+    .typeString('pensamientos')
+    .pauseFor(450)
+    .deleteAll()
+    .typeString('formas de pensar')
+    .pauseFor(450)
+    .deleteChars(6)
+    .typeString('jugar')
+    .pauseFor(450)
+    .deleteChars(5)
+    .typeString('hablar')
+    .pauseFor(450)
+    .deleteChars(6)
+    .typeString('amar')
+    .pauseFor(450)
+    .deleteAll()
+    .typeString('alegrías')
+    .pauseFor(450)
+    .deleteAll()
+    .typeString('siempre!')
+    .pauseFor(1250)
+    .deleteAll()
+    .start();
