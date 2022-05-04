@@ -83,7 +83,6 @@ img{
     user-select: none;
 }
 
-
 /* Estilizado específico */
 
 /* Estilizado del header-nav */
@@ -96,7 +95,7 @@ img{
     justify-content: space-evenly;
     align-items: center;
     transition: top .5s ease-in-out .15s;
-    z-index: 3;
+    z-index: 1;
 }
 
 #header-img{
@@ -130,7 +129,6 @@ img{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #FFF;
 }
 
 #container-main-text{
@@ -148,9 +146,9 @@ img{
 }
 
 .heading{
-    font-size: 6rem;
+    font-size: 5.75rem;
     line-height: 5.5rem;
-    letter-spacing: -.25rem;
+    letter-spacing: -.35rem;
 }
 
 .paragraph{
@@ -170,13 +168,36 @@ img{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 /* Estilizado del primer artículo */
 
 #container-article{
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     background-color: #FBFBFB;
+}
+
+#container-first-art-text{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#first-art-img{
+    height: 100%;
+    width: auto;
+}
+
+/* Estilizado del segundo artículo */
+
+#container-second-art{
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EAEBED;
 }
