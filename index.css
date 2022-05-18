@@ -162,6 +162,7 @@ img{
 #img-hero{
     width: auto;
     height: 100%;
+    image-rendering: auto;
 }
 
 /* Estilizado de artículos*/
@@ -199,29 +200,182 @@ img{
 /* Estilizado del segundo artículo */
 
 #container-second-art{
+    height: 200vh;
     flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30vh 0;
     background-color: #FBFBFB;
 }
 
-#container-sec-art-text{
+#container-sec-text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-text-card{
+    height: 25%;
+    width: 100%;
+}
+
+.second-art-heading:hover{
+    color: #ED4136;
+    transition: all 225ms ease-in-out;
+}
+
+#second-art-img{
+    height: 35%;
+    width: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35%;
+    transition: all .25s ease-in-out;
+}
+
+#second-art-img:hover{
+    transform: scale(1.2);
+}
+
+/* Estilizado del tercer artículo */
+
+#container-third-art{
+    height: 120vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(#FBFBFB,#c5c5c5);
+}
+
+#container-third-art-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.third-art-heading{
+    font-size: 3.8rem;
+    letter-spacing: 0rem;
+}
+
+.third-art-paragraph{
+    width: 50%;
+    font-family: "Mont Bold";
+    font-size: 2rem;
+    text-align: center;
+}
+
+#container-third-art-info{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.third-art-sect-info{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#third-art-frame{
+    height: 95%;
+    width: 90%;
+    margin: auto;
+    border: 0;
+    border-radius: 5% 5%;
+}
+
+.third-art-sect-heading{
+    font-size: 3.5rem;
+    letter-spacing: 0rem;
+}
+
+.third-art-sect-paragraph{
+    width: 75%;
+    margin: 1% 0;
+    font-size: 2.5rem;
+}
+
+/* selector para ganarle a la especificidad del estilizado general de a tags */
+.third-art-sect-info .third-art-sect-anchor{
+    color: #ED4136;
+    transition: all 250ms ease-in-out;
+} 
+.third-art-sect-anchor:hover{
+    color: #ff1100;
+}
+
+/* Estilizado del footer */
+
+#container-footer{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA1319;
+    /* background: #F7493B; */
+}
+
+.section-footer{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer:nth-child(1){
     align-items: flex-start;
 }
 
-#second-art-img{
-    height: 55%;
-    width: auto;
-    position: absolute;
-    left: 5%;
-    transition: all .25s ease-in-out;
+#footer-span-copyright{
+    margin-top: 1.5rem;
+    color: #FFF;
+    font-family: "Mont Regular";
+    font-size: 1.55rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-#second-art-img:hover{
-    height: 60%;
+#footer-img{
+    height: auto;
+    width: 70%;
+    image-rendering: auto;
+}
+
+.footer-text {
+    color: #fff;
+    margin: 1% 0;
+    font-family: "Futura Std Medium";
+    font-size: 2rem;
+}
+
+.footer-anchor{
+    font-family: "Mont Bold";
+    transition: all 250ms ease-out;
+}
+.footer-anchor:hover{
+    color: #fff;
+}
+
+.footer-media{
+    cursor: pointer;
+}
+
+#footer-img-logo{
+    height: 85%;
+    width: auto;
+    filter: opacity(.4);
 }
