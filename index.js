@@ -75,3 +75,15 @@ typewriter.typeString('lenguajes')
     .pauseFor(1250)
     .deleteAll()
     .start();
+
+// Redirecciones de iconos
+
+const iconFacebook = document.getElementById("icon-facebook")
+const iconInstagram = document.getElementById("icon-instagram")
+const iconGoogleMaps = document.getElementById("icon-gmaps")
+
+iconFacebook.addEventListener("click", () => open("https://www.facebook.com/LorisMDulceC", ""))
+
+iconInstagram.addEventListener("click", () => open("https://www.instagram.com/lorismdulcec/", ""))
+
+iconGoogleMaps.addEventListener("click", () => open("https://g.page/LorisMDulceC?share", ""))

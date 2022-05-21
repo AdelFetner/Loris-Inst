@@ -152,6 +152,10 @@ img{
     line-height: 5.5rem;
     letter-spacing: -.35rem;
 }
+.heading:hover{
+    color: #ED4136;
+    transition: all 225ms ease-in-out;
+}
 
 .paragraph{
     width: 70%;
@@ -220,11 +224,6 @@ img{
 .second-text-card{
     height: 25%;
     width: 100%;
-}
-
-.second-art-heading:hover{
-    color: #ED4136;
-    transition: all 225ms ease-in-out;
 }
 
 #second-art-img{
@@ -364,7 +363,7 @@ img{
 
 .footer-anchor{
     font-family: "Mont Bold";
-    transition: all 250ms ease-out;
+    transition: all 250ms ease-in-out;
 }
 .footer-anchor:hover{
     color: #fff;
@@ -372,6 +371,11 @@ img{
 
 .footer-media{
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.footer-media:hover{
+    filter: invert(100%);
 }
 
 #footer-img-logo{
