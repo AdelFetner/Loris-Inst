@@ -457,7 +457,7 @@ img{
         align-items: center;
     }
 
-    #container-main-text > p{
+    #main-paragraph{
         text-align: center;
     }
 
@@ -535,27 +535,67 @@ img{
         font-size: 2.35rem;
     }
 
+    #container-main-text{
+        justify-content: flex-end;
+    }
+
+    #main-heading{
+        position: absolute;
+        top: 8%;
+    }
+
+    #main-paragraph{
+        width: 80%;
+        padding-bottom: 5rem;
+    }
+
     #container-article{
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 
     #container-first-art-text{
-        height: 50%;
+        height: 55%;
         width: 100%;
         margin-left: 5rem;
     }
 
     #first-art-img-mobile{
         height: auto;
-        width: 90%;
+        width: 80%;
         display: block;
     }
 
     #first-art-img-tablet{
         display: none;
     }
+    
+    #container-second-art{
+        height: 250vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 7.5vh 0; 
+    }
+    
+    #container-sec-text{
+        width: 80%;
+    }
+
     .second-text-card{
-        width: 25%;
+        height: 25%;
+        width: 100%;
+    }
+    
+    /* Para los paragraphs dentro de las cards de texto */
+    .second-text-card p{
+        width: 90%;
+    }
+    
+    #second-art-img{
+        height: 17.5%;
+        position: unset;
+    }
+    #second-art-img:hover{
+        transform: scale(1.1);
     }
 }
