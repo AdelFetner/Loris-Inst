@@ -184,6 +184,7 @@ img{
     width: 100%;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 /* Estilizado del primer artículo */
@@ -473,7 +474,7 @@ img{
 
     #container-first-art-text{
         margin: 0;
-        margin-left: 7.5rem;
+        padding-left: 7.5rem;
     }
 
     .second-text-card{
@@ -496,7 +497,7 @@ img{
     }
     
     #container-first-art-text{
-        margin-left: 3rem;
+        padding-left: 3rem;
     }
 
     #first-art-img{
@@ -540,11 +541,14 @@ img{
     }
 
     #main-heading{
+        width: 70%;
         position: absolute;
         top: 8%;
+        padding: 0;
     }
 
     #main-paragraph{
+        text-align: left;
         width: 80%;
         padding-bottom: 5rem;
     }
@@ -557,7 +561,7 @@ img{
     #container-first-art-text{
         height: 55%;
         width: 100%;
-        margin-left: 5rem;
+        padding-left: 5rem;
     }
 
     #first-art-img-mobile{
@@ -597,5 +601,87 @@ img{
     }
     #second-art-img:hover{
         transform: scale(1.1);
+    }
+
+    #container-third-art-info {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #container-third-art {
+        height: 220vh;
+    }
+
+    #container-third-art-info{
+        height: 75%;
+    }
+
+    #container-third-art-text{
+        align-items: flex-start;
+        margin-left: 15%;
+    }
+
+    .third-art-paragraph{
+        text-align: left;
+        width: 85%;
+    }
+
+    .third-art-sect-paragraph{
+        text-align: left;   
+        width: 90%;
+    }
+
+    .third-art-sect-info{
+        width: 90%;
+    }
+    .third-art-sect-info:nth-child(2) {
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    #container-footer {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .section-footer{
+        width: 100%;
+    }
+    .section-footer:nth-child(1){
+        align-items: center;
+    }
+    .section-footer:nth-child(2){
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    #footer-img-logo {
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #main-heading {
+        width: 85%;
+    }
+
+    #first-art-img-mobile{
+        margin-top: 15%;
+    }
+    
+    #first-art-heading{
+        width: 90%;
+    }
+
+    .second-text-card p {
+        width: 100%;
+    }
+
+    #second-art-img{
+        margin-top: 10rem;
+    }
+    #second-art-img:hover{
+        transform: scale(1);
     }
 }
