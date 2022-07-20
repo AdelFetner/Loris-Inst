@@ -141,6 +141,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 3.5%
 }
 
 .text{
@@ -184,7 +185,6 @@ img{
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
 }
 
 /* Estilizado del primer artículo */
@@ -529,7 +529,7 @@ img{
     }
 
     .heading{
-        font-size: 4.75rem;
+        font-size: 4.45rem;
     }
     
     .paragraph {
@@ -538,6 +538,7 @@ img{
 
     #container-main-text{
         justify-content: flex-end;
+        padding-left: 0;
     }
 
     #main-heading{
@@ -619,7 +620,7 @@ img{
 
     #container-third-art-text{
         align-items: flex-start;
-        margin-left: 15%;
+        padding-left: 10%;
     }
 
     .third-art-paragraph{
@@ -637,7 +638,7 @@ img{
     }
     .third-art-sect-info:nth-child(2) {
         width: 100%;
-        margin-left: 15%;
+        padding-left: 10%;
     }
 
     #container-footer {

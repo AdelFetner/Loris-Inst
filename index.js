@@ -17,19 +17,18 @@
 //     }
 // }
 
-
 let scrollPrevio = window.scrollY;
-window.onscroll = () => {
-    const header = document.getElementById("container-header");
-    let scrollActual = window.scrollY;
 
-    if (scrollPrevio > scrollActual){
+window.addEventListener("scroll", () =>{
+    let header = document.getElementById("container-header");
+    let scrollActual = window.scrollY;
+    if (scrollPrevio > scrollActual) {
         header.style.top = "0";
     } else {
-        header.style.top = "-20%";
-    };
+        header.style.top = "-20%"
+    }
     scrollPrevio = scrollActual;
-};
+})
 
 const logoHeader = document.getElementById("header-img");
 
