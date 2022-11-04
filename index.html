@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loris Malaguzzi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <header id="container-header">
-        <img src="assets/logo.svg" alt="Logo Institucional de Loris Malaguzzi" id="header-img"  draggable="false">
+    <header id="container-header" class="header-on">
+        <img src="assets/logo.svg" alt="Logo Institucional de Loris Malaguzzi" id="header-img" draggable="false">
         <nav id="container-nav">
             <!-- <a href="" class="nav-anchor">Institucional</a>
             <a href="" class="nav-anchor">Inicial</a>
@@ -22,11 +26,11 @@
             <a href="" class="nav-anchor">Contacto</a> -->
         </nav>
     </header>
-
     <main id="container-main">
         <div id="container-main-text">
             <h1 class="heading text" id="main-heading">Cien <span id="main-type"></span></h1>
-            <p class="paragraph text" id="main-paragraph">Orientados a generar una educación de calidad, bilateral y coherente con los valores de Loris Malaguzzi</p>
+            <p class="paragraph text" id="main-paragraph">Orientados a generar una educación de calidad, bilateral y
+                coherente con los valores de Loris Malaguzzi</p>
         </div>
         <img src="assets/main-hero.png" alt="Imagen Principal" id="img-hero" draggable="false">
         <img src="assets/main-hero-tablet.png" alt="Imagen Principal" id="img-hero-tablet" draggable="false">
@@ -34,77 +38,105 @@
     </main>
 
     <article id="container-article" class="article">
-        <div id="container-first-art-text">
+        <div id="container-first-art-text" class="fade fade-left">
             <h2 class="heading text" id="first-art-heading">El potencial viene de ellos</h2>
-            <p class="paragraph text">Todos los niños tienen el potencial y la curiosidad suficiente para construir su aprendizaje. Ellos serán quienes lleven la iniciativa</p>
+            <p class="paragraph text" id="first-art-paragraph">Todos los niños tienen el potencial y la curiosidad
+                suficiente para construir su aprendizaje. Ellos serán quienes lleven la iniciativa</p>
         </div>
         <img src="assets/nena.png" alt="Niña alegre en fondo triangular" id="first-art-img" draggable="false">
-        <img src="assets/nenamobile.png" alt="Niña alegre en fondo rectangular" id="first-art-img-tablet" draggable="false">
-        <img src="assets/nene mobile.png" alt="Niño alegre en fondo rectangular rojo con íconos y figuras" id="first-art-img-mobile" draggable="false">
+        <img src="assets/nenamobile.png" alt="Niña alegre en fondo rectangular" id="first-art-img-tablet"
+            draggable="false">
+        <img src="assets/nene mobile.png" alt="Niño alegre en fondo rectangular rojo con íconos y figuras"
+            id="first-art-img-mobile" draggable="false">
     </article>
 
     <article id="container-second-art" class="article">
         <section id="container-sec-text">
 
-            <article class="second-text-card">
-                <h3 class="heading text second-art-heading">Educación creativa</h3>
-                <p class="paragraph text">Nuestra propuesta educativa pone atención en el protagonismo del niño, con una mirada puesta hacia el aprendizaje por medio de la observación.</p>
+            <article class="second-text-card fade fade-right">
+                <h3 class="heading text second-art-heading" id="second-art-heading-creative">Educación creativa</h3>
+                <p class="paragraph text" id="second-art-paragraph-creative">Nuestra propuesta educativa pone atención
+                    en el protagonismo del niño, con una
+                    mirada puesta hacia el aprendizaje por medio de la observación.</p>
             </article>
 
-            <article class="second-text-card">
-                <h3 class="heading text second-art-heading">Educación armónica</h3>
-                <p class="paragraph text">Nuestra institución toma en cuenta las necesidades arquitectónicas del espacio para lograr un ambiente de aprendizaje ideal.</p>
+            <article class="second-text-card fade fade-right">
+                <h3 class="heading text second-art-heading" id="second-art-heading-harmonious">Educación armónica</h3>
+                <p class="paragraph text" id="second-art-paragraph-harmonious">Nuestra institución toma en cuenta las
+                    necesidades arquitectónicas del espacio
+                    para lograr un ambiente de aprendizaje ideal.</p>
             </article>
 
-            <article class="second-text-card">
-                <h3 class="heading text second-art-heading">Educación Reggio Emilia</h3>
-                <p class="paragraph text">Nuestra filosofía mantiene un método de enseñanza basada en la investigación y reflexión priorizando las relaciones del alumno con la familia y el profesor.</p>
+            <article class="second-text-card fade fade-right">
+                <h3 class="heading text second-art-heading" id="second-art-heading-reggio-emilia">Educación Reggio
+                    Emilia</h3>
+                <p class="paragraph text" id="second-art-paragraph-reggio-emilia">Nuestra filosofía mantiene un método
+                    de enseñanza basada en la investigación y
+                    reflexión priorizando las relaciones del alumno con la familia y el profesor.</p>
             </article>
         </section>
-        <img src="assets/deividcard.png" alt="Imagen de estatua griega con fondo rosa" id="second-art-img" draggable="false">
+        <img src="assets/deividcard.png" alt="Imagen de estatua griega con fondo rosa" id="second-art-img"
+            draggable="false">
     </article>
 
     <article id="container-third-art" class="article">
         <div id="container-third-art-text">
-            <h3 class="heading text third-art-heading">Contacto</h3>
-            <p class="paragraph text third-art-paragraph">Nos encantaría contarles sobre nuestro proyecto educativo, y queremos saber sus dudas y necesidades.</p>
+            <h3 class="heading text third-art-heading" id="third-art-heading">Contacto</h3>
+            <p class="paragraph text third-art-paragraph" id="third-art-paragraph">Nos encantaría contarles sobre
+                nuestro proyecto educativo, y
+                queremos saber sus dudas y necesidades.</p>
         </div>
         <article id="container-third-art-info">
             <section class="third-art-sect-info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d393.02914321112695!2d-57.558165!3d-37.995022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x696cc52b0ad1f75d!2sLoris%20Malaguzzi!5e0!3m2!1sen!2sar!4v1652408741539!5m2!1sen!2sar" loading="lazy" id="third-art-frame"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d393.02914321112695!2d-57.558165!3d-37.995022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x696cc52b0ad1f75d!2sLoris%20Malaguzzi!5e0!3m2!1sen!2sar!4v1652408741539!5m2!1sen!2sar"
+                    loading="lazy" id="third-art-frame"></iframe>
             </section>
             <section class="third-art-sect-info">
-                <h4 class="heading third-art-sect-heading third-art-text">Nosotros</h4>
-                <p class="paragraph third-art-sect-paragraph  third-art-text">Encontranos de Lunes a Viernes de 9:00 a 11:00 o de 14:00 a 16:00 en Rivadavia 3628 - Mar del Plata</p>
-                <p class="paragraph third-art-sect-paragraph third-art-text">¡También contactanos por <a href="mailto:jmdulcecompania@yahoo.com.ar" class="third-art-sect-anchor">e-mail</a>!</p>
-                <h4 class="heading third-art-sect-heading third-art-text">Entrevista</h4>
-                <p class="paragraph third-art-sect-paragraph  third-art-text">¡Contactanos y agendá una entrevista con <a href="https://api.whatsapp.com/send/?phone=5492235753702&text=Hola%21+que+tal%3F+quiero+pedir+una+entrevista&app_absent=0" class="third-art-sect-anchor">nosotros</a>!</p>
+                <h4 class="heading third-art-sect-heading third-art-text" id="third-art-sect-heading-us">Nosotros</h4>
+                <p class="paragraph third-art-sect-paragraph  third-art-text" id="third-art-sect-p-time">Encontranos de
+                    Lunes a Viernes de 9:00 a
+                    11:00 o de 14:00 a 16:00 en Rivadavia 3628 - Mar del Plata</p>
+                <p class="paragraph third-art-sect-paragraph third-art-text" id="third-art-sect-p-media">¡También
+                    contactanos por <a href="mailto:jmdulcecompania@yahoo.com.ar"
+                        class="third-art-sect-anchor">e-mail</a>!</p>
+                <h4 class="heading third-art-sect-heading third-art-text" id="third-art-sect-interview">Entrevista</h4>
+                <p class="paragraph third-art-sect-paragraph  third-art-text" id="third-art-sect-paragraph-interview">
+                    ¡Contactanos y agendá una entrevista con
+                    <a href="https://api.whatsapp.com/send/?phone=5492235753702&text=Hola%21+que+tal%3F+quiero+pedir+una+entrevista&app_absent=0"
+                        class="third-art-sect-anchor">nosotros</a>!
+                </p>
             </section>
         </article>
 
     </article>
-
     <footer id="container-footer">
         <section class="section-footer">
-            <img src="assets/Loris Institucional.png" alt="Logo institucional de Loris Malaguzzi" id="footer-img" draggable="false">
+            <img src="assets/Loris Institucional.png" alt="Logo institucional de Loris Malaguzzi" id="footer-img"
+                draggable="false">
             <span id="footer-span-copyright">Copyright © 2022 Loris Malaguzzi</span>
         </section>
         <section class="section-footer">
-            <span class="footer-text">Cel: <a href="tel:(223) 5-753702" class="footer-anchor">(223) 5-753702</a></span>
-            <span class="footer-text">Tel: <a href="tel:(0223) 494-4665" class="footer-anchor">(0223) 494-4665</a></span>
+            <span class="footer-text">Cel: <a href="tel:(223) 5-753702" class="footer-anchor">(223)
+                    5-753702</a></span>
+            <span class="footer-text">Tel: <a href="tel:(0223) 494-4665" class="footer-anchor">(0223)
+                    494-4665</a></span>
             <span class="footer-text">Rivadavia 3628</span>
             <span class="footer-text">Mar del Plata, Buenos Aires</span>
             <div id="footer-container-media">
-                <img src="assets/facebook.svg" alt="Icono de facebook" class="footer-media" id="icon-facebook" draggable="false">
-                <img src="assets/instagram.svg" alt="Icono de instagram" class="footer-media" id="icon-instagram" draggable="false">
-                <img src="assets/googlemaps.svg" alt="Icono de google maps" class="footer-media" id="icon-gmaps" draggable="false">
+                <img src="assets/facebook.svg" alt="Icono de facebook" class="footer-media" id="icon-facebook"
+                    draggable="false">
+                <img src="assets/instagram.svg" alt="Icono de instagram" class="footer-media" id="icon-instagram"
+                    draggable="false">
+                <img src="assets/googlemaps.svg" alt="Icono de google maps" class="footer-media" id="icon-gmaps"
+                    draggable="false">
             </div>
         </section>
         <section class="section-footer">
-            <img src="assets/Loris inst-blanco.svg" alt="Logo institucional de Lrois Malaguzzi en blanco y sin letras" id="footer-img-logo" draggable="false">
+            <img src="assets/Loris inst-blanco.svg" alt="Logo institucional de Lrois Malaguzzi en blanco y sin letras"
+                id="footer-img-logo" draggable="false">
         </section>
     </footer>
-
     <script src="index.js"></script>
 </body>
 
