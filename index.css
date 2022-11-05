@@ -309,6 +309,19 @@ img{
     border-radius: 1rem;
     background: radial-gradient( 150.65% 28.28% at 50% 17.26%, #aeddff36 0%, #bed9ed00 100% ), radial-gradient( 152.15% 29.04% at 10.16% 24.65%, #ddbcf756 0%, #ffffff00 100% ), radial-gradient( 155.47% 39.97% at 0% 87.49%, #e3c5fb8f 0%, #ffffff00 100% ), #f9faff;;
 }
+#popup::before{
+    position: absolute;
+    content: "";
+    top: .5rem;
+    right: .5rem;
+    bottom: 0;
+    left: .5rem;
+    background: conic-gradient(from 147.14deg at 50% 50%,#0294fe -55.68deg,#ff2136 113.23deg,#9b4dff 195deg,#0294fe 304.32deg,#ff2136 473.23deg);
+    z-index: -1;
+    border-radius: .6rem;
+    filter: blur(2rem);
+    opacity: .6;
+}
 
 #img-popup{
     height: 60%;
@@ -342,6 +355,7 @@ img{
     align-items: center;
     gap: 1rem;
 }
+
 
 .btn-popup{
     height: 4.4rem;
@@ -446,7 +460,6 @@ img{
     top: 35%;
     transition: all .25s ease-in-out;
 }
-
 #second-art-img:hover{
     transform: scale(1.2);
 }

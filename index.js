@@ -27,6 +27,9 @@ const popup = () => {
     // evento para cambiar idioma
     const agreeBtn = document.getElementById("agree-popup")
     agreeBtn.addEventListener("click", () => {
+        // función para resettear idioma
+        if (isItalian === false) location.reload();
+
         // función para cambiar idioma
         changeLanguage();
         // función de typeWriting
@@ -97,6 +100,7 @@ const changeLanguage = () => {
 const observer = new IntersectionObserver((entries) => {
     const elemento = entries[0];
     const containerPopup = document.getElementById("container-popup");
+
     if (elemento.isIntersecting) {
         if (!containerPopup || !containerPopup.classList.contains("popup-off")) popup()
     } else {
@@ -110,13 +114,12 @@ observer.observe(main);
 const observerMaker = (orientacion) => {
     const observer = new IntersectionObserver((entries) => {
         const elemento = entries[0];
-        if (elemento.isIntersecting) {
+        if (elemento.isIntersecting)
             elemento.target.classList.add(`fade-${orientacion}`)
-            console.log("hola", elemento.target)
-        } else {
+
+        else
             elemento.target.classList.remove(`fade-${orientacion}`)
-            console.log("chau", elemento.target)
-        }
+
     }, { threshold: [0.3] });
 
     const fadeElements = [...document.getElementsByClassName(`fade-${orientacion}`)];
