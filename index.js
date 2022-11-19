@@ -95,16 +95,18 @@ const changeLanguage = () => {
     thirdSectParagraphInterview.textContent = "Contattaci e fissa un colloquio con noi!"
 }
 
-// function to close if scrolled down
+// función para cerrar | abrir popup
 
 const observer = new IntersectionObserver((entries) => {
     const elemento = entries[0];
     const containerPopup = document.getElementById("container-popup");
 
     if (elemento.isIntersecting) {
-        if (!containerPopup || !containerPopup.classList.contains("popup-off")) popup()
+        const isPopupOff = !containerPopup || !containerPopup.classList.contains("popup-off");
+        if (isPopupOff) popup()
     } else {
-        if (containerPopup || containerPopup.classList.contains("popup-off")) closeElemento(containerPopup)
+        const isPopupOn = containerPopup || containerPopup.classList.contains("popup-off");
+        if (isPopupOn) closeElemento(containerPopup)
     }
 }, { threshold: [0.7] });
 const main = document.getElementById("container-main");
